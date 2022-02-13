@@ -5,8 +5,8 @@ async function fetchRecords({ startDate, endDate, minCount, maxCount }) {
     {
       $match: {
         createdAt: {
-          $gte: new Date(startDate),
-          $lte: new Date(endDate),
+          $gte: startDate,
+          $lte: endDate,
         },
       },
     },
