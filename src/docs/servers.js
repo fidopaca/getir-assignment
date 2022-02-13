@@ -2,7 +2,7 @@ let server;
 const env = process.env.NODE_ENV;
 if (env == "production") {
   server = {
-    url: "https://getir-assignment-fedaipaca.herokuapp.com/",
+    url: "https://getir-assignment-fedaipaca.herokuapp.com/restv1",
     description: "Production Server",
   };
 } else {
