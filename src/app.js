@@ -1,6 +1,10 @@
 const express = require("express");
+const httpLogger = require("./lib/logger/httpLogger");
 
 const app = express();
+
+// log incoming request to console via morgan+winston
+app.use(httpLogger);
 
 // rest api, altough express always return same instance,
 // we are passing app insantce
