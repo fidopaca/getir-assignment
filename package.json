@@ -1,6 +1,6 @@
 {
-  "name": "getir-assignment",
-  "description": "",
+  "name": "getir-assignment-fedaipaca",
+  "description": "A RESTful API with a single endpoint that fetches the data in the provided MongoDB collection and return the results in the requested format.",
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
@@ -12,16 +12,26 @@
     "type": "git",
     "url": "git+https://github.com/fidopaca/getir-assignment.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "getir",
+    "nodejs",
+    "mongodb",
+    "rest api"
+  ],
+  "author": "Fedai Paça",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/fidopaca/getir-assignment/issues"
   },
-  "homepage": "https://github.com/fidopaca/getir-assignment#readme",
+  "homepage": "https://getir-assignment-fedaipaca.herokuapp.com/",
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^16.0.0",
     "express": "^4.17.2",
+    "express-mongo-sanitize": "^2.2.0",
+    "express-rate-limit": "^6.2.1",
+    "helmet": "^5.0.2",
+    "hpp": "^0.2.3",
     "joi": "^17.6.0",
     "mongoose": "^6.2.1",
     "morgan": "^1.10.0",
