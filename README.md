@@ -60,7 +60,7 @@ npm run test
 - [express-rate-limit](https://github.com/nfriedly/express-rate-limit) to limit repeated requests to the API
 - [helmet](https://helmetjs.github.io/) to secure API by setting various HTTP headers
 - [hpp](https://github.com/analog-nico/hpp) to protect against HTTP Parameter Pollution attacks
-- [swagger-ui-express](hhttps://github.com/scottie1984/swagger-ui-express) to auto-generate API doc
+- [swagger-ui-express](https://github.com/scottie1984/swagger-ui-express) to auto-generate API doc
 
 ## Contact
 📧 fedaipaca@gmail.com
