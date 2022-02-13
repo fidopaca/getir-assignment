@@ -14,6 +14,7 @@ module.exports = (err, req, res, next) => {
     code = err.errCode;
     httpStatus = err.httpStatus;
   } else if (err instanceof ValidationError) {
+    console.log(err);
     msg = `Validation Errors: ${err.message.replace(/\"/g, "")}`;
     code = 3;
     httpStatus = 400;
