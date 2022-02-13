@@ -1,3 +1,4 @@
+const { ValidationError } = require("joi");
 const BaseError = require("../../../lib/errors/BaseError");
 const appLogger = require("../../../lib/logger/appLogger");
 
@@ -12,6 +13,14 @@ module.exports = (err, req, res, next) => {
     msg = err.message;
     code = err.errCode;
     httpStatus = err.httpStatus;
+  } else if (err instanceof ValidationError) {
+    msg = `Validation Errors: ${err.message.replace(/\"/g, "")}`;
+    code = 3;
+    httpStatus = 400;
+  } else if (err instanceof SyntaxError) {
+    msg = err.message;
+    code = 3;
+    httpStatus = 400;
   }
 
   return res.status(httpStatus).json({ code, msg });
