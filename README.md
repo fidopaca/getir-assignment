@@ -8,6 +8,7 @@ A RESTful API with a single endpoint that fetches the data in the provided Mongo
 Made with [Node.js](https://nodejs.org/), [MongoDB](https://www.mongodb.com/) and ❤️.
 
 ## Application Url
+
 > https://getir-assignment-fedaipaca.herokuapp.com/
 
 ## Installation
@@ -17,6 +18,7 @@ Clone or download repo. Use the package manager [npm](https://www.npmjs.com/) to
 ```bash
 npm install
 ```
+
 Rename `.env.example` file to `.env` and assign values to PORT and MONGO_URL
 
 ## Run
@@ -38,20 +40,25 @@ npm run start
 ```bash
 npm run test
 ```
+
 ## Postman Collection
+
 [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/a876dff0649a16ba3251?action=collection%2Fimport)
 
 ## Resources
+
 ### Record Resource
 
-| Method                       | Description            | Required Body Fields                     | Authentication |
-| ---------------------------- | ---------------------- | ------------------------                 | -------------- |
-| POST /records                | Returns all records    | `startDate, endDate, minCount, maxCount` | not required   |
+| Method        | Description         | Required Body Fields                     | Authentication |
+| ------------- | ------------------- | ---------------------------------------- | -------------- |
+| POST /records | Returns all records | `startDate, endDate, minCount, maxCount` | not required   |
 
 ## Used Tools
 
 - [Express](https://expressjs.com/) for web framework
 - [Mongoose](https://mongoosejs.com/) for object modeling
+- [Jest](https://jestjs.io/) for tests
+- [Supertest](https://github.com/visionmedia/supertest) for tests
 - [Winston](https://github.com/winstonjs/winston) for application wide logging
 - [Morgan](https://github.com/expressjs/morgan) for http request logging
 - [Joi](https://joi.dev/) for validation
@@ -63,4 +70,5 @@ npm run test
 - [swagger-ui-express](https://github.com/scottie1984/swagger-ui-express) to auto-generate API doc
 
 ## Contact
+
 📧 fedaipaca@gmail.com
